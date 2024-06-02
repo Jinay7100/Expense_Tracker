@@ -22,7 +22,7 @@ Expense Tracker is a web application built to help users manage their finances b
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/username/expense-tracker.git
+   git clone https://github.com/Jinay7100/Expense_Tracker.git
 
    ```
 
@@ -42,20 +42,25 @@ npm install
 5. Start the frontend server:
 
 npm start
+
 Access the application at http://localhost:3000.
 
-Usage
-Register an account or log in if you already have one.
-Add income sources and expenses to start tracking your finances.
-Use the charts to visualize your spending habits.
-Edit or delete transactions as needed.
-Log out to securely end your session.
+## Usage
 
-Contributing
+- Register an account or log in if you already have one.
+- Add income sources and expenses to start tracking your finances.
+- Edit or delete transactions as needed.
+- Log out to securely end your session.
+
+## Contributing
+
 Contributions are welcome! Please follow the contribution guidelines before submitting pull requests.
 
-Acknowledgments
+## Acknowledgments
+
 Thanks to the Django and React.js communities for their excellent documentation and resources.
 Special thanks to contributors who have helped improve this project.
-Contact
+
+## Contact
+
 For any inquiries or support, please contact jinaygada2000@gmail.com.
