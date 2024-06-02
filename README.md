@@ -63,4 +63,4 @@ Special thanks to contributors who have helped improve this project.
 
 ## Contact
 
-For any inquiries or support, please contact jinaygada2000@gmail.com.
+For any inquiries or support, please contact via email jinaygada2000@gmail.com.
