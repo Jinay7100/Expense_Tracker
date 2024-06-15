@@ -47,13 +47,10 @@ def addmoney(request):
 @api_view(['GET'])
 def get_expense(request):
     try:
-        print("nowhere",request.session['user_id'],"----------------------------")
         if request.session.has_key('is_logged'):
-            print("here")
-            userId = request.session['user_id'] 
-            print("here1",userId)
+            userId = request.session['user_id']
             user = User.objects.get(id=userId)
-            print("here2",user)
+            
             addmoney_info = Addmoney_info.objects.filter(user=user).order_by('-Date')
             serializer = Addmoney_infoSerializers(addmoney_info,many = True)
             return Response(data=serializer.data,status=200)
@@ -152,7 +149,6 @@ def handleLogin(request):
             request.session['is_logged'] = True
             user = request.user.id
             request.session['user_id'] = user
-            # print(request.session['user_id'],"----------------session-------------")
             messages.success(request,"Successfully Logged In")
             request.session.modified = True
             return HttpResponse('Successfully Logged In')
@@ -220,7 +216,6 @@ def expense_edit(request,id):
 @api_view(['POST'])
 def expense_delete(request,id):
     try:
-        print("here")
         if request.session.has_key('is_logged'):
             addmoney_info = Addmoney_info.objects.get(id=id)
             addmoney_info.delete()
